@@ -6,4 +6,6 @@
 //
 
 import Foundation
-StudentMain()
+
+var user: User = User()
+user.ByMove()

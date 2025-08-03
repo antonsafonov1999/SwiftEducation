@@ -15,7 +15,7 @@ enum AgeError: Error{
     case TooLong
 }
 func ValideForm(_ Name: String, _ Age: Int) throws -> String{
-    if Name == nil || Name.isEmpty { throw NameError.empty}
+    if Name == nil && Name.isEmpty { throw NameError.empty}
     if Name.count < 3 {throw NameError.TooShort}
     if Age < 18 {throw AgeError.TooShort}
     if  Age >= 120 {throw AgeError.TooLong}
