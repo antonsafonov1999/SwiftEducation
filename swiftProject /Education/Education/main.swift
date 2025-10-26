@@ -7,5 +7,3 @@
 
 import Foundation
 
-var user: User = User()
-user.ByMove()
