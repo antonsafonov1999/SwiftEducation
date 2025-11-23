@@ -186,11 +186,22 @@ class Teacher: DelegateTeacher
     
     
 }
-
+class A: DelegateTeacher
+{
+    func TakeHomeWork() {
+        print("Take home work")
+    }
+    
+    func TakeTest() {
+        print("Take test")
+    }
+    
+    
+}
 var student1 = Student(name: "Anton")
 var student2 = Student(name: "Petr")
 
-var tech = Teacher()
+var tech = A()
 
 //student1.delegate = tech
 //student1.Examen( )
